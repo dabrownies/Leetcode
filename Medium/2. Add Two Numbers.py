@@ -61,12 +61,12 @@ class Solution(object):
         head = ListNode(int(ans_stack.pop()))
         node = head
 
-        while ans_stack: 
+        while ans_stack:
             node.next = ListNode(int(ans_stack.pop()))
             node = node.next
 
-        
         return head
+
 
 
 # Time Complexity:
