@@ -32,6 +32,6 @@ class Solution(object):
                     return res
 
 
-# Time Complexity
+# Time Complexity:
 # Runtime: O(n)
 # Space: O(n)
