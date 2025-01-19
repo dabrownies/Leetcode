@@ -32,4 +32,7 @@ class Solution(object):
             curr = temp
         
         return prev
-        
+
+# Time Complexity:
+# Runtime: O(n)
+# Space: O(1)
