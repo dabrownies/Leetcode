@@ -51,7 +51,7 @@ def countServers(grid):
 
     return server_count
 
-
 # Time Complexity:
 # Runtime: O(n^2)
 # Space: O(n)
+
