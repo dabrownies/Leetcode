@@ -11,8 +11,7 @@ def insertionSort(arr):
 
     arr[j+1] = curr
 
-
-test = [6,43,3,6,43,65,3,]
+test = [6,43,3,6,43,65,3]
 print(test)
 insertionSort(test)
 print(test)
