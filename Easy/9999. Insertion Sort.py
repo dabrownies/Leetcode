@@ -1,7 +1,7 @@
 """9999. Insertion Sort"""
 
 def insertionSort(arr):
-    for i in range(1, len(s)):
+    for i in range(1, len(arr)):
         curr = arr[i]
         j = i - 1
 
