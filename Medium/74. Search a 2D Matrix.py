@@ -23,12 +23,15 @@ Output: false
 
 class Solution(object):
     def searchMatrix(self, matrix, target):
+        if target < matrix[0][0] or target > matrix[-1][-1]:
+            return False
+        
         ROWS = len(matrix)
         COLS = len(matrix[0])
 
         top = 0
         bottom = ROWS - 1
-        
+
         # perform BS on all matrix rows
         while top <= bottom:
             mid_row = (top + bottom) // 2
@@ -38,9 +41,13 @@ class Solution(object):
             elif target > matrix[mid_row][-1]:
                 top = mid_row + 1
             else:
-                break # found the correct row 
+                break # we found our potential correct row
         
-        # perform BS on matrix row
+        # never found correct row
+        if top > bottom:
+            return False
+
+        # perform BS on the correct row
         l = 0
         r = COLS - 1
 
@@ -53,8 +60,9 @@ class Solution(object):
                 r = mid - 1
             else:
                 l = mid + 1
-        
+
         return False
+
 
 # Time Complexity:
 # Runtime: O(log(m*n))
