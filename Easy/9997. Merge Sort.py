@@ -10,7 +10,6 @@ def mergeSort(arr):
     mergeSort(leftArr)
     mergeSort(rightArr)
     merge(arr, leftArr, rightArr)
-
     return arr
 
 # merging
@@ -38,7 +37,6 @@ def merge(arr, left, right):
             arr[k] = right[j]
             j += 1
             k += 1
-
     return arr
 
 
