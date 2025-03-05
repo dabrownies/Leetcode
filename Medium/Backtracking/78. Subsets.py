@@ -28,7 +28,7 @@ class Solution(object):
             # option 1: dont select value
             backtrack(i+1)
 
-            # optuon 2: select value
+            # option 2: select value
             curr.append(nums[i])
             backtrack(i+1)
             curr.pop()
