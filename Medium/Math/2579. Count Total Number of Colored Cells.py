@@ -12,7 +12,7 @@ Return the number of colored cells at the end of n minutes.
 
 Example 1:
 
-Input: n = 1
+Input: n = 14
 Output: 1
 Explanation: After 1 minute, there is only 1 blue cell, so we return 1.
 Example 2:
@@ -36,4 +36,16 @@ class Solution(object):
 
 # Time Complexity:
 # Runtime: O(n)
+# Space: O(1)
+
+"""
+Better solution using Gauss' formula:
+"""
+
+class Solution(object):
+    def coloredCells(n):
+        return 1 + 4 * (n * (n-1) // 2)
+
+# Time Complexity:
+# Runtime: O(1)
 # Space: O(1)
